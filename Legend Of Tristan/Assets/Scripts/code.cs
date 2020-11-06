@@ -13,6 +13,7 @@ public class code : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //comentario de prueba
+        Debug.Log("hola");
     }
 }
