@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2556879641935175566}
   - component: {fileID: 3368314454822074457}
   - component: {fileID: 8547283947457296644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arquero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +46,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 476821219
+  m_SortingLayerID: 1948239599
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7243615536323895233, guid: 1c3b11d4439bc8841a1702d0ae87aedd,

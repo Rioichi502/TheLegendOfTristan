@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7878766898045082946}
   - component: {fileID: 5283603355344039479}
   - component: {fileID: 6652870934779922264}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ojo Volador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +46,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 476821219
+  m_SortingLayerID: 1948239599
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -4795363162621231457, guid: 58306f1f12cada243a6c59a3ca5d43f6,

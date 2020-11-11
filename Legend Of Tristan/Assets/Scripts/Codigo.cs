@@ -14,6 +14,6 @@ public class code : MonoBehaviour
     void Update()
     {
         //comentario de prueba
-        Debug.Log("hola");
+        Debug.Log("holiwi");
     }
 }

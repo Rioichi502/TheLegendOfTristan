@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 683485071764862601}
   - component: {fileID: 1968553683880418293}
   - component: {fileID: 2359442779742659029}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "Esqueleto peque\xF1o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +46,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 476821219
+  m_SortingLayerID: 1948239599
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -3847943250117979209, guid: 7e2131ceca57b38469c4cda5b37cb2f5,

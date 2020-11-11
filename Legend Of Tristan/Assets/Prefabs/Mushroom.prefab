@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6499643183302559262}
   - component: {fileID: 2326796490606591874}
   - component: {fileID: 5742356136647222437}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +46,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 476821219
+  m_SortingLayerID: 1948239599
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -7008412969330441016, guid: 71251d492466ad4448f36eb77ed5bfd0,

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3655445654689201636}
   - component: {fileID: 4814524825201991399}
   - component: {fileID: 1489312680460158737}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Esqueleto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +46,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 476821219
+  m_SortingLayerID: 1948239599
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -7008412969330441016, guid: 8518202cd179ac94ca9f0e0185914c3e,
