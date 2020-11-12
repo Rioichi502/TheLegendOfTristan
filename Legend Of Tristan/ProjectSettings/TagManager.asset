@@ -14,10 +14,10 @@ TagManager:
   - 
   - 
   - Suelo
+  - Decoracion
+  - Personajes
   - Personajes
   - Monedas
-  - 
-  - 
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Monedas
     uniqueID: 3639175671
+    locked: 0
+  - name: Decoracion
+    uniqueID: 2433900591
     locked: 0
