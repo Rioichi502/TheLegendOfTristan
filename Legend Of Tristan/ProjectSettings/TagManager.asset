@@ -20,7 +20,7 @@ TagManager:
   - Monedas
   - Icono
   - Botones
-  - 
+  - Cartas
   - 
   - 
   - 
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: Botones
     uniqueID: 3189330037
+    locked: 0
+  - name: Cartas
+    uniqueID: 1522941089
     locked: 0
