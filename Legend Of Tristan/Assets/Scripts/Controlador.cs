@@ -22,6 +22,9 @@ public class Controlador : MonoBehaviour
             GameObject crear = Instantiate(Boton) as GameObject;
             crear.transform.SetParent(Mazo.transform);
             crear.transform.position = Vector3.zero;
+            crear.transform.localScale = Vector3.one;
+
+            
         }
     }
 
