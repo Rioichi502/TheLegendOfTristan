@@ -16,7 +16,7 @@ TagManager:
   - Suelo
   - Decoracion
   - Personajes
-  - Personajes
+  - Enemigos
   - Monedas
   - Icono
   - Botones
@@ -61,4 +61,7 @@ TagManager:
     locked: 0
   - name: Cartas
     uniqueID: 1522941089
+    locked: 0
+  - name: Enemigos
+    uniqueID: 3178395839
     locked: 0
