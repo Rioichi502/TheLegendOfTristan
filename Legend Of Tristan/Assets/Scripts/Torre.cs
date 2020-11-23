@@ -10,6 +10,7 @@ public class Torre : MonoBehaviour
 
     void Atacar()
     {
+        SistemaSonido.ss.PlayKingAtack();
         vida--;
         if (vida <= 0)
         {
