@@ -3200,6 +3200,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &491343234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 491343235}
+  m_Layer: 10
+  m_Name: arco
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &491343235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491343234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.509, y: 0.464, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1223288282}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &500614508
 GameObject:
   m_ObjectHideFlags: 0
@@ -3932,6 +3962,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &664056950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6683600925670931021, guid: d2d72fe2bb9c480478e82456cc610abc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1036813096}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &664056954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664056950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b249195b09809b45949bb8d8900b406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 5
+  velocidad: 1
+  layerPersonajes:
+    serializedVersion: 2
+    m_Bits: 1024
+  frecuenciaDeAtaque: 1
+  frecuencia: 0
 --- !u!1 &673560132
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,6 +5561,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &962948416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4085188065798368623, guid: 82abbc2eda453b34b852a50549bd939a,
+    type: 3}
+  m_PrefabInstance: {fileID: 413359189}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &962948420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962948416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b249195b09809b45949bb8d8900b406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 5
+  velocidad: 1
+  layerPersonajes:
+    serializedVersion: 2
+    m_Bits: 1024
+  frecuenciaDeAtaque: 1
+  frecuencia: 0
 --- !u!1 &966147051
 GameObject:
   m_ObjectHideFlags: 0
@@ -6764,6 +6844,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1204088271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7661803016310328012, guid: 9d560040d61099e4caea585b18bf0219,
+    type: 3}
+  m_PrefabInstance: {fileID: 1766219467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1204088275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204088271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b249195b09809b45949bb8d8900b406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 5
+  velocidad: 1
+  layerPersonajes:
+    serializedVersion: 2
+    m_Bits: 0
+  frecuenciaDeAtaque: 1
+  frecuencia: 0
 --- !u!1 &1210229654
 GameObject:
   m_ObjectHideFlags: 0
@@ -6977,11 +7082,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   precio: 0
   frecuenciaDisparo: 1
-  Flecha: {fileID: 1607965891065565738, guid: 975674307c747c7458f001c306c15164, type: 3}
-  arco: {fileID: 0}
+  Flecha: {fileID: 1595110940218426103, guid: ffa76fff7d309f7408bca70d8601ada0, type: 3}
+  arco: {fileID: 491343235}
   layerEnemigo:
     serializedVersion: 2
     m_Bits: 2048
+  VelocidadFlecha: 100
+--- !u!4 &1223288282 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2556879641935175566, guid: 95eb9891b57fc5f4cb19b6c3aa347957,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482354181}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1259919366
 GameObject:
   m_ObjectHideFlags: 0
