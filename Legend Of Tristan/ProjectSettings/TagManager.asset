@@ -44,14 +44,17 @@ TagManager:
   - name: Suelo
     uniqueID: 2537806779
     locked: 0
+  - name: Decoracion
+    uniqueID: 2433900591
+    locked: 0
   - name: Personajes
     uniqueID: 1948239599
     locked: 0
+  - name: Enemigos
+    uniqueID: 3178395839
+    locked: 0
   - name: Monedas
     uniqueID: 3639175671
-    locked: 0
-  - name: Decoracion
-    uniqueID: 2433900591
     locked: 0
   - name: Icono
     uniqueID: 133741835
@@ -61,7 +64,4 @@ TagManager:
     locked: 0
   - name: Cartas
     uniqueID: 1522941089
-    locked: 0
-  - name: Enemigos
-    uniqueID: 3178395839
     locked: 0

@@ -9,19 +9,18 @@ public class GeneradorDeEnemigos : MonoBehaviour
     public float frecuenciaEnemigos = 10;
     public GameObject Enemigo;
 
-    void Start()
-    {
-      
+    void Update()
+    {   
         for(int i = 0; i< segundos.Length; i++)
         {
-            Invoke("InstanciarEnemigo", segundos[i]);
-        }
-   
-        
+            //Invoke("InstanciarEnemigo", segundos[i]);
+            InstanciarEnemigo();
+        }     
     }
 
     void InstanciarEnemigo()
     {
         Instantiate(Enemigo, transform.position, Enemigo.transform.rotation);
+        Debug.Log("Generando enemigo");
     }
 }

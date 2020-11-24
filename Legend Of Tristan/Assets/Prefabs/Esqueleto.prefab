@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3655445654689201636}
   - component: {fileID: 4814524825201991399}
   - component: {fileID: 1489312680460158737}
-  m_Layer: 9
+  - component: {fileID: 9005737198871065200}
+  m_Layer: 11
   m_Name: Esqueleto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1948239599
-  m_SortingLayer: 2
+  m_SortingLayerID: -1116571457
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -7008412969330441016, guid: 8518202cd179ac94ca9f0e0185914c3e,
     type: 3}
@@ -102,3 +103,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &9005737198871065200
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3413242153613398542}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.64977425, y: 0.20479631}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 1.5, y: 1.7}
+    newSize: {x: 1.5, y: 1.7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9237014, y: 0.40959263}
+  m_EdgeRadius: 0

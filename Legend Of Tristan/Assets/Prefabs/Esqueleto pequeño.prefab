@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 683485071764862601}
   - component: {fileID: 1968553683880418293}
   - component: {fileID: 2359442779742659029}
-  m_Layer: 9
+  - component: {fileID: 3286918826840867845}
+  m_Layer: 11
   m_Name: "Esqueleto peque\xF1o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1948239599
-  m_SortingLayer: 2
+  m_SortingLayerID: -1116571457
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -3847943250117979209, guid: 7e2131ceca57b38469c4cda5b37cb2f5,
     type: 3}
@@ -102,3 +103,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &3286918826840867845
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4085188065798368623}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2647071, y: 0.13279986}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0.88, y: 1.28}
+    newSize: {x: 1.2, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5294142, y: 0.26559973}
+  m_EdgeRadius: 0
