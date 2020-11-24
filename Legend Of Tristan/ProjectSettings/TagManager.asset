@@ -22,8 +22,8 @@ TagManager:
   - Icono
   - Botones
   - Cartas
-  - 
-  - 
+  - Dragging
+  - Container
   - 
   - 
   - 
@@ -65,4 +65,10 @@ TagManager:
     locked: 0
   - name: Cartas
     uniqueID: 1522941089
+    locked: 0
+  - name: Container
+    uniqueID: 1427051675
+    locked: 0
+  - name: Dragging
+    uniqueID: 749951657
     locked: 0
