@@ -16,7 +16,8 @@ public class GameManager : MonoBehaviour
 
     public void PlaceObject() {
         if (draggingObject != null  && currentContainer != null) {
-            Instantiate(draggingObject.GetComponent<ObjectDragging>().card.objectGame, currentContainer.transform);
+            GameObject objectGame = Instantiate(draggingObject.GetComponent<ObjectDragging>().card.objectGame, currentContainer.transform);
+            objectGame.GetComponent<ArqueroController>().enemigos = currentContainer.GetComponent<ObjectContainer>().spawnPoint.enemigos;
             currentContainer.GetComponent<ObjectContainer>().ocupado = true;
         }
     }
