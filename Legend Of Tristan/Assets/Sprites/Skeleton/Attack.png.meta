@@ -27,7 +27,7 @@ TextureImporter:
       213: 4780903288873104255
     second: Attack_7
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -81,6 +81,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -115,8 +116,8 @@ TextureImporter:
         serializedVersion: 2
         x: 60
         y: 49
-        width: 45
-        height: 51
+        width: 80
+        height: 57
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +137,8 @@ TextureImporter:
         serializedVersion: 2
         x: 210
         y: 49
-        width: 42
-        height: 52
+        width: 80
+        height: 57
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,7 +158,7 @@ TextureImporter:
         serializedVersion: 2
         x: 353
         y: 49
-        width: 36
+        width: 80
         height: 57
       alignment: 6
       pivot: {x: 0, y: 0}
@@ -178,7 +179,7 @@ TextureImporter:
         serializedVersion: 2
         x: 503
         y: 49
-        width: 36
+        width: 80
         height: 57
       alignment: 6
       pivot: {x: 0, y: 0}
@@ -199,7 +200,7 @@ TextureImporter:
         serializedVersion: 2
         x: 653
         y: 49
-        width: 36
+        width: 80
         height: 57
       alignment: 6
       pivot: {x: 0, y: 0}
@@ -219,8 +220,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 808
-        y: 49
-        width: 31
+        y: 50
+        width: 80
         height: 57
       alignment: 6
       pivot: {x: 0, y: 0}
@@ -263,7 +264,7 @@ TextureImporter:
         x: 1118
         y: 49
         width: 80
-        height: 52
+        height: 57
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
