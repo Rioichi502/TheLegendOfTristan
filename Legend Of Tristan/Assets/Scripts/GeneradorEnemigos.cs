@@ -12,7 +12,10 @@ public class GeneradorEnemigos : MonoBehaviour
         foreach (Enemigos enemigo in enemigos) {
             if (enemigo.isSpawned == false && enemigo.SpawnTime <= Time.time) {
                 GameObject InstanciaEnemigo= Instantiate(enemigosPrefab[(int)enemigo.tipoEnemigo], transform.GetChild(enemigo.Spawner).transform);
+                transform.GetChild(enemigo.Spawner).GetComponet<SpawnPoint>().enemigos.Add(InstanciaEnemigo);
+                
                 enemigo.isSpawned = true;
+
             }
         }
     }

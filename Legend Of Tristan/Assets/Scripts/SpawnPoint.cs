@@ -5,6 +5,8 @@ using UnityEngine;
 public class SpawnPoint : MonoBehaviour
 {
 
-    public Vector3 objetivo;
+    public List<GameObject> enemigos;
+
+
 
 }

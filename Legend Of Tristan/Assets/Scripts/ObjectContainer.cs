@@ -9,6 +9,7 @@ public class ObjectContainer : MonoBehaviour
     public bool ocupado;
     public GameManager gameManager;
     public Image backgroundImage;
+    public SpawnPoint spawnPoint;
 
     private void Start()
     {
