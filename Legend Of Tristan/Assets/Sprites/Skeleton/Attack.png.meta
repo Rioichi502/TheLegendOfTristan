@@ -54,7 +54,7 @@ TextureImporter:
       213: -2238382357930459393
     second: Attack_8
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -108,7 +108,6 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -145,7 +144,11 @@ TextureImporter:
         y: 49
         width: 45
         height: 51
+<<<<<<< HEAD
       alignment: 0
+=======
+      alignment: 6
+>>>>>>> parent of 88ed1a5... Añadidos
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -166,7 +169,11 @@ TextureImporter:
         y: 49
         width: 42
         height: 52
+<<<<<<< HEAD
       alignment: 0
+=======
+      alignment: 6
+>>>>>>> parent of 88ed1a5... Añadidos
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -290,6 +297,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1118
         y: 49
+<<<<<<< HEAD
         width: 70
         height: 52
       alignment: 0
@@ -314,6 +322,11 @@ TextureImporter:
         width: 9
         height: 25
       alignment: 0
+=======
+        width: 80
+        height: 52
+      alignment: 6
+>>>>>>> parent of 88ed1a5... Añadidos
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []

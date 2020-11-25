@@ -39,7 +39,7 @@ TextureImporter:
       213: -9192815492500660022
     second: Attack_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -93,7 +93,6 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -128,8 +127,8 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 49
-        width: 51
-        height: 45
+        width: 23
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,8 +148,8 @@ TextureImporter:
         serializedVersion: 2
         x: 211
         y: 49
-        width: 51
-        height: 45
+        width: 23
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,8 +169,8 @@ TextureImporter:
         serializedVersion: 2
         x: 351
         y: 49
-        width: 51
-        height: 45
+        width: 29
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +190,8 @@ TextureImporter:
         serializedVersion: 2
         x: 501
         y: 49
-        width: 51
-        height: 45
+        width: 29
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,8 +211,8 @@ TextureImporter:
         serializedVersion: 2
         x: 651
         y: 49
-        width: 51
-        height: 45
+        width: 29
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,7 +232,7 @@ TextureImporter:
         serializedVersion: 2
         x: 805
         y: 49
-        width: 51
+        width: 25
         height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -254,8 +253,8 @@ TextureImporter:
         serializedVersion: 2
         x: 956
         y: 49
-        width: 51
-        height: 45
+        width: 50
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,7 +275,7 @@ TextureImporter:
         x: 1114
         y: 49
         width: 51
-        height: 45
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

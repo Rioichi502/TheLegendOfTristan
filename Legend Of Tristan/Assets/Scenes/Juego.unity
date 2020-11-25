@@ -3483,6 +3483,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1001 &403638201
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3618,6 +3619,8 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 403638201}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 88ed1a5... Añadidos
 --- !u!1 &409870901
 GameObject:
   m_ObjectHideFlags: 0
@@ -5677,6 +5680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af6cccd170904af42bd0801a29e5ad0c, type: 3}
+<<<<<<< HEAD
 --- !u!1 &624884152
 GameObject:
   m_ObjectHideFlags: 0
@@ -5773,6 +5777,8 @@ MonoBehaviour:
     Spawner: 0
     RandomSpawn: 1
     isSpawned: 0
+=======
+>>>>>>> parent of 88ed1a5... Añadidos
 --- !u!1 &628460706
 GameObject:
   m_ObjectHideFlags: 0
@@ -8428,6 +8434,7 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 589567809}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &1028144289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8563,6 +8570,8 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1028144289}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 88ed1a5... Añadidos
 --- !u!1 &1029741677
 GameObject:
   m_ObjectHideFlags: 0
@@ -9925,7 +9934,10 @@ RectTransform:
   - {fileID: 1234124170}
   - {fileID: 1139003926}
   - {fileID: 1198722343}
+<<<<<<< HEAD
   - {fileID: 624884153}
+=======
+>>>>>>> parent of 88ed1a5... Añadidos
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11936,6 +11948,7 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 977023618}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &1515118649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12071,6 +12084,8 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1515118649}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 88ed1a5... Añadidos
 --- !u!1001 &1516597468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17436,6 +17451,7 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 193950690}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &1427462381677214170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17571,6 +17587,8 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1427462381677214170}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 88ed1a5... Añadidos
 --- !u!1001 &1771195223221447631
 PrefabInstance:
   m_ObjectHideFlags: 0

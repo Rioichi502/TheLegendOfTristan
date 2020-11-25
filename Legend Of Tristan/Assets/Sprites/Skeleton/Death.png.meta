@@ -15,7 +15,7 @@ TextureImporter:
       213: -4444752178724111745
     second: Death_12
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -69,7 +69,6 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,7 +103,7 @@ TextureImporter:
         serializedVersion: 2
         x: 60
         y: 47
-        width: 56
+        width: 45
         height: 53
       alignment: 6
       pivot: {x: 0, y: 0}
@@ -125,8 +124,8 @@ TextureImporter:
         serializedVersion: 2
         x: 206
         y: 49
-        width: 56
-        height: 53
+        width: 51
+        height: 43
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,8 +145,8 @@ TextureImporter:
         serializedVersion: 2
         x: 354
         y: 49
-        width: 56
-        height: 53
+        width: 54
+        height: 23
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,7 +167,7 @@ TextureImporter:
         x: 502
         y: 49
         width: 56
-        height: 53
+        height: 13
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
