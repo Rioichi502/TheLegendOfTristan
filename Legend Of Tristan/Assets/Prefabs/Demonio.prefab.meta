@@ -1,9 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: aa789f2979d91954eb55276bfca88667
+=======
 <<<<<<< HEAD:Legend Of Tristan/Assets/Prefabs/Enemigos/DemonAxe.prefab.meta
 guid: 64a2f8103e2f21e4abc4dd39dd7a1e01
 =======
 guid: dfee25e9fd249d34588310cd43348f61
 >>>>>>> parent of 88ed1a5... Añadidos:Legend Of Tristan/Assets/Prefabs/Demonio.prefab.meta
+>>>>>>> parent of 88ed1a5... Añadidos
 PrefabImporter:
   externalObjects: {}
   userData: 
