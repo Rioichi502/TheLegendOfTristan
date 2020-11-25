@@ -135,8 +135,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a2ff7acad79a343ae8d4ed00bde4a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: {fileID: 4845187977379399813, guid: 9d6392ed6d1818b4aaff8e6928472931, type: 3}
-  enemigos: []
-  toAttack: {fileID: 0}
-  attackCooldown: 2
-  isAttacking: 0
