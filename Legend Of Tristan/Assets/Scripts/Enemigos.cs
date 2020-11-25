@@ -9,6 +9,9 @@ public class Enemigos
 
     public int SpawnTime;
     public TipoEnemigo tipoEnemigo;
+    public int Spawner;
+    public bool RandomSpawn;
+    public bool isSpawned;
 
 }
 

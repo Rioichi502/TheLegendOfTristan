@@ -4,7 +4,17 @@ using UnityEngine;
 
 public class GeneradorEnemigos : MonoBehaviour
 {
-
+    public List<GameObject> enemigosPrefab;
     public List<Enemigos> enemigos;
+
+    private void Update()
+    {
+        foreach (Enemigos enemigo in enemigos) {
+            if (enemigo.isSpawned == false && enemigo.SpawnTime <= Time.time) {
+                GameObject InstanciaEnemigo= Instantiate(enemigosPrefab[(int)enemigo.tipoEnemigo], transform.GetChild(enemigo.Spawner).transform);
+                enemigo.isSpawned = true;
+            }
+        }
+    }
 
 }
