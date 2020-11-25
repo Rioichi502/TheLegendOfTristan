@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class GeneradorEnemigos : MonoBehaviour
 {
-    public List<GameObject> enemigosPrefab;
-    public List<Enemigos> enemigos;
 
+<<<<<<< HEAD
     private void Update()
     {
         foreach (Enemigos enemigo in enemigos) {
@@ -18,5 +17,8 @@ public class GeneradorEnemigos : MonoBehaviour
             }
         }
     }
+=======
+    public List<Enemigos> enemigos;
+>>>>>>> parent of f951bc9... Colisiones
 
 }
