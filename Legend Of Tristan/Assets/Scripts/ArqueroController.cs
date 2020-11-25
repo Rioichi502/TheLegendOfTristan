@@ -21,5 +21,14 @@ public class ArqueroController : MonoBehaviour
         {
             isAttacking = false;
         }
+
+        if (toAttack != null)
+        {
+           if (attackTime <= Time.time)
+           {
+                Instantiate(arrow, transform);
+                attackTime = Time.time + attackCooldown;
+           }
+        }
     }
 }
