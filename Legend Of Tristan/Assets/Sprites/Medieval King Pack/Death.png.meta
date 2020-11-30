@@ -36,7 +36,7 @@ TextureImporter:
       213: 2990493390978864817
     second: Death_10
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -90,7 +90,6 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -123,10 +122,10 @@ TextureImporter:
       name: Death_0
       rect:
         serializedVersion: 2
-        x: 38
+        x: 49
         y: 39
-        width: 83
-        height: 82
+        width: 35
+        height: 81
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +143,10 @@ TextureImporter:
       name: Death_1
       rect:
         serializedVersion: 2
-        x: 190
+        x: 198
         y: 39
-        width: 83
-        height: 82
+        width: 40
+        height: 77
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,10 +164,10 @@ TextureImporter:
       name: Death_2
       rect:
         serializedVersion: 2
-        x: 343
+        x: 347
         y: 39
-        width: 83
-        height: 82
+        width: 46
+        height: 62
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,10 +185,10 @@ TextureImporter:
       name: Death_3
       rect:
         serializedVersion: 2
-        x: 489
+        x: 501
         y: 39
-        width: 83
-        height: 82
+        width: 49
+        height: 60
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,8 +208,8 @@ TextureImporter:
         serializedVersion: 2
         x: 657
         y: 39
-        width: 83
-        height: 82
+        width: 50
+        height: 61
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +227,10 @@ TextureImporter:
       name: Death_5
       rect:
         serializedVersion: 2
-        x: 811
+        x: 812
         y: 39
-        width: 83
-        height: 82
+        width: 50
+        height: 61
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,8 +250,8 @@ TextureImporter:
         serializedVersion: 2
         x: 952
         y: 39
-        width: 83
-        height: 82
+        width: 65
+        height: 58
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,8 +271,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1094
         y: 39
-        width: 83
-        height: 82
+        width: 77
+        height: 32
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,7 +293,7 @@ TextureImporter:
         x: 1245
         y: 39
         width: 83
-        height: 82
+        height: 12
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,7 +314,7 @@ TextureImporter:
         x: 1398
         y: 39
         width: 85
-        height: 82
+        height: 12
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,7 +335,7 @@ TextureImporter:
         x: 1555
         y: 39
         width: 83
-        height: 82
+        height: 11
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

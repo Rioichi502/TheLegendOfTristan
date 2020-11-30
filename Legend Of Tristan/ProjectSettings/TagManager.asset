@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Flecha
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -14,14 +13,14 @@ TagManager:
   - UI
   - 
   - 
-  - Dragging
-  - Container
+  - Suelo
+  - Decoracion
   - Personajes
   - Enemigos
-  - Arrow
-  - 
-  - 
-  - 
+  - Monedas
+  - Icono
+  - Botones
+  - Cartas
   - 
   - 
   - 
@@ -41,4 +40,28 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Suelo
+    uniqueID: 2537806779
+    locked: 0
+  - name: Decoracion
+    uniqueID: 2433900591
+    locked: 0
+  - name: Personajes
+    uniqueID: 1948239599
+    locked: 0
+  - name: Enemigos
+    uniqueID: 3178395839
+    locked: 0
+  - name: Monedas
+    uniqueID: 3639175671
+    locked: 0
+  - name: Icono
+    uniqueID: 133741835
+    locked: 0
+  - name: Botones
+    uniqueID: 3189330037
+    locked: 0
+  - name: Cartas
+    uniqueID: 1522941089
     locked: 0
