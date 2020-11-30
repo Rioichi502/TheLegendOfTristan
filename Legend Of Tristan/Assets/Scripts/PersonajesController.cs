@@ -17,11 +17,12 @@ public class PersonajesController : MonoBehaviour
         }
     }
 
-    IEnumerator Attack(Collider2D collider) {
+    IEnumerator Attack(Collider2D collider) { 
         if (collider == null){
             
         }
         else {
+            SistemaSonido.ss.PlayAudioSword();
             collider.gameObject.GetComponent<EnemyController>().RecibirDaño(Daño);
             yield return new WaitForSeconds(Cooldown);
             StartCoroutine(Attack(collider));

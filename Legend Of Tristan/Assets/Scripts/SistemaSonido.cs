@@ -6,8 +6,12 @@ public class SistemaSonido : MonoBehaviour
 {
 
     public static SistemaSonido ss;
-    public AudioSource audioKingAtack;
+    public AudioSource audioSword;
     public AudioSource levelMusic;
+    public AudioSource audioFireball;
+    public AudioSource audioPhysical;
+    public AudioSource audioArrow;
+    public AudioSource audioAxe;
 
     void Awake() {
         if (ss == null)
@@ -26,8 +30,24 @@ public class SistemaSonido : MonoBehaviour
         levelMusic.Play();
     }
 
-    public void PlayKingAtack(){
-        audioKingAtack.Play();
+    public void PlayAudioSword(){
+        audioSword.Play();
+    }
+
+     public void PlayAudioFireball(){
+        audioFireball.Play();
+    }
+
+     public void PlayAudioPhysical(){
+        audioPhysical.Play();
+    }
+
+     public void PlayAudioArrow(){
+        audioArrow.Play();
+    }
+
+     public void PlayAudioAxe(){
+        audioAxe.Play();
     }
 
     

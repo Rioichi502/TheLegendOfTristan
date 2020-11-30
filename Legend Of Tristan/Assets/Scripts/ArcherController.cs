@@ -25,6 +25,7 @@ public class ArcherController : MonoBehaviour
         }
         if (atacando == true ) {
             if(attackTime <= Time.time) {
+                SistemaSonido.ss.PlayAudioArrow();
                 GameObject flechaInstance= Instantiate(flecha, transform);
                 flechaInstance.GetComponent<Flecha>().Daño = daño;
                 attackTime = Time.time + Cooldown;
