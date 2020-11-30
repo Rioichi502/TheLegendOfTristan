@@ -4,20 +4,24 @@ using UnityEngine;
 
 [System.Serializable]
 
-public class Enemigos 
+public class Enemigos
 {
 
     public int SpawnTime;
     public TipoEnemigo tipoEnemigo;
+    public int Spawner;
+    public bool RandomSpawn;
+    public bool isSpawned;
 
 }
 
-public enum TipoEnemigo { 
-    Goblin,
+public enum TipoEnemigo
+{
     Brujo,
     Demonio,
     EsqueletoGrande,
     EsqueletoPequeño,
-    Seta,
-    OjoVolador
+    Goblin,
+    OjoVolador,
+    Seta
 }

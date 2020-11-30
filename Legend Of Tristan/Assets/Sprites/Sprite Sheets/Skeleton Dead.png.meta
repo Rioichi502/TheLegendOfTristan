@@ -60,7 +60,7 @@ TextureImporter:
       213: 2198027132570139386
     second: Skeleton Dead_18
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -114,6 +114,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -338,7 +339,7 @@ TextureImporter:
         x: 301
         y: 0
         width: 23
-        height: 28
+        height: 32
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,7 +360,7 @@ TextureImporter:
         x: 334
         y: 0
         width: 24
-        height: 25
+        height: 32
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,7 +381,7 @@ TextureImporter:
         x: 367
         y: 0
         width: 25
-        height: 16
+        height: 32
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -401,7 +402,7 @@ TextureImporter:
         x: 396
         y: 0
         width: 30
-        height: 8
+        height: 32
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,7 +423,7 @@ TextureImporter:
         x: 429
         y: 0
         width: 30
-        height: 7
+        height: 32
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -443,7 +444,7 @@ TextureImporter:
         x: 462
         y: 0
         width: 30
-        height: 7
+        height: 32
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

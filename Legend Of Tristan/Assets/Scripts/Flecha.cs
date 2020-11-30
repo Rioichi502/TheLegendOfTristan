@@ -4,12 +4,22 @@ using UnityEngine;
 
 public class Flecha : MonoBehaviour
 {
-    public int velocidad=10;
-    public int daño=1;
+
+    public float Velocidad;
+    public int Daño;
 
     void Update()
     {
-        //movimiento de la flecha a la derecha
-        transform.position += Vector3.right * velocidad * Time.deltaTime;
+        transform.Translate(Vector3.right * Time.deltaTime * Velocidad);
     }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject.layer == 11)
+        {
+            collider.gameObject.GetComponent<EnemyController>().RecibirDaño(Daño);
+            Destroy(this.gameObject);
+        }
+    }
+
 }

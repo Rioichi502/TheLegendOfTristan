@@ -7,5 +7,9 @@ public class GestorEscena : MonoBehaviour
 {
     public void CambioEscena(string NombreEscena) {
         SceneManager.LoadScene(NombreEscena);
+        if (NombreEscena.Equals("Juego")) {
+            Time.timeScale = 1;
+        }
+
     }
 }
