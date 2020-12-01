@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1513327881596450020}
   - component: {fileID: 4741157446065378414}
   - component: {fileID: -8895186264352201501}
-  - component: {fileID: -8253389157951221653}
+  - component: {fileID: -7037750835560343142}
   m_Layer: 10
   m_Name: MagoGame
   m_TagString: Player
@@ -123,7 +123,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 26.758041, y: 27.695982}
   m_EdgeRadius: 0
---- !u!114 &-8253389157951221653
+--- !u!114 &-7037750835560343142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,9 +132,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4761970210161816806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af4488c0a6f9e9b40b7ac0becba37ca0, type: 3}
+  m_Script: {fileID: 11500000, guid: 395ee51b5d22e2948b325685fe17df4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Salud: 10
-  "Da\xF1o": 75
+  "Da\xF1o": 100
   Cooldown: 1

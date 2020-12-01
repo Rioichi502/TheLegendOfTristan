@@ -11,7 +11,6 @@ public class EnemiesSpawner : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Time.time);
         foreach (Enemigos enemigo in enemigos)
         {
             if (enemigo.SpawnTime <= Time.time)
@@ -27,6 +26,3 @@ public class EnemiesSpawner : MonoBehaviour
         }
     }
 }
-//if (Time.time > nextSpawn)
-//           {
-//               nextSpawn = Time.time + enemigo.SpawnTime;

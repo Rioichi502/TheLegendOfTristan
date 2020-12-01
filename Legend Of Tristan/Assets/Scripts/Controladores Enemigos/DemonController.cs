@@ -43,7 +43,10 @@ public class DemonController : MonoBehaviour
         }
         else {
             try { collider.gameObject.GetComponent<ArcherController>().RecibirDaño(Daño); } catch { }
-            try { collider.gameObject.GetComponent<PersonajesController>().RecibirDaño(Daño); } catch { }
+            try { collider.gameObject.GetComponent<BandidoController>().RecibirDaño(Daño); } catch { }
+            try { collider.gameObject.GetComponent<ReyController>().RecibirDaño(Daño); } catch { }
+            try { collider.gameObject.GetComponent<CaballeroController>().RecibirDaño(Daño); } catch { }
+            try { collider.gameObject.GetComponent<MagoController>().RecibirDaño(Daño); } catch { }
             yield return new WaitForSeconds(Cooldown);
             StartCoroutine(Attack(collider));
         }     

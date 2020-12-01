@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5535702085784933673}
   - component: {fileID: 2948038582937222993}
   - component: {fileID: 5735663054627541691}
-  - component: {fileID: 422336057119211739}
+  - component: {fileID: 5472752825352963636}
   m_Layer: 10
   m_Name: ReyGame
   m_TagString: Player
@@ -123,7 +123,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 26.046883, y: 39.512978}
   m_EdgeRadius: 0
---- !u!114 &422336057119211739
+--- !u!114 &5472752825352963636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4995380413667617673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af4488c0a6f9e9b40b7ac0becba37ca0, type: 3}
+  m_Script: {fileID: 11500000, guid: 04eddf32c03dc8441ae231fa0de6ab1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Salud: 15
