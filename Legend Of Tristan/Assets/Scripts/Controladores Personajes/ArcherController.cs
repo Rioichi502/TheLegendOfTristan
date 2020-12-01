@@ -12,6 +12,8 @@ public class ArcherController : MonoBehaviour
     private float attackTime;
     public int Daño=50;
     private bool atacando;
+    public GameObject lapida;
+    public GameObject pies;
 
     Animator animator;
 

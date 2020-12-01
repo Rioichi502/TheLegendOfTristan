@@ -8,6 +8,10 @@ public class BandidoController : MonoBehaviour
     public int Salud=7;
     public int Daño=50;
     public float Cooldown=0.5f;
+    public GameObject lapida;
+    public GameObject pies;
+    private GameObject Lapida;
+
 
     Animator animator;
 
@@ -20,13 +24,14 @@ public class BandidoController : MonoBehaviour
     {
         if (collider.gameObject.layer == 11)
         {
+            animator.SetBool("Luchando", true);
             StartCoroutine(Attack(collider));
         }
     }
 
     IEnumerator Attack(Collider2D collider) { 
         if (collider == null){
-            
+            animator.SetBool("Luchando", false);
         }
         else {
             SistemaSonido.ss.PlayAudioSword();
@@ -44,7 +49,11 @@ public class BandidoController : MonoBehaviour
 
     public void RecibirDaño(int daño) {
         if (Salud-daño <= 0) {
-            Destroy(this.gameObject);
+            animator.SetInteger("Salud", 0);
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
+            {
+                Lapida= Instantiate(lapida, transform);
+            }
         }
         else
         {
