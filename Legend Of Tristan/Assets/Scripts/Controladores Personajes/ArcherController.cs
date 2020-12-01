@@ -13,6 +13,13 @@ public class ArcherController : MonoBehaviour
     public int Daño=50;
     private bool atacando;
 
+    Animator animator;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public void Update() {
         if (enemigos.Count > 0 && atacando == false)
         {

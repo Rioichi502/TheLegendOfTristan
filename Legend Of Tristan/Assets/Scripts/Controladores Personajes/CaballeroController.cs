@@ -9,6 +9,13 @@ public class CaballeroController : MonoBehaviour
     public int Daño=50;
     public float Cooldown=1;
 
+    Animator animator;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.layer == 11)
