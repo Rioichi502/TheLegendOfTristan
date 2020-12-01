@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class BSController : MonoBehaviour
 {
 
-    public int Salud;
-    public int Daño;
-    public float Cooldown;
-    public float Velocidad;
-    private bool Quieto;
+    public int Salud = 350;
+    public int TiempoSpawn = 4;
+    public int Daño = 3;
+    public float Cooldown = 2;
+    public float Velocidad = 15;
+    private bool Quieto = false;
+    public ArcherController arquero;
 
     void Update()
     {
@@ -26,6 +28,13 @@ public class EnemyController : MonoBehaviour
             StartCoroutine(Attack(collider));
             Quieto = true;
         }
+
+        if (collider.gameObject.layer == 12)
+        {
+            RecibirDaño(arquero.Daño);
+            Destroy(collider.gameObject);
+        }
+
     }
 
     IEnumerator Attack(Collider2D collider) {

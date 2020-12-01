@@ -105,8 +105,8 @@ GameObject:
   m_Component:
   - component: {fileID: 88043292255558994}
   - component: {fileID: 6536573448368585762}
-  - component: {fileID: 2211587822011028139}
   - component: {fileID: 2520375690487572683}
+  - component: {fileID: -8382453554433558604}
   m_Layer: 11
   m_Name: OjoVolador
   m_TagString: Enemies
@@ -160,22 +160,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 61.37918, y: 40.360153}
   m_EdgeRadius: 0
---- !u!114 &2211587822011028139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8755531055955964539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb98e778ce434f447a3bf24ce4f1e331, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Salud: 200
-  "Da\xF1o": 1
-  Cooldown: 1
-  Velocidad: 15
 --- !u!50 &2520375690487572683
 Rigidbody2D:
   serializedVersion: 4
@@ -197,3 +181,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8382453554433558604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8755531055955964539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78aa2514646e6954eb44ab075027975f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Salud: 200
+  TiempoSpawn: 3
+  "Da\xF1o": 2
+  Cooldown: 1
+  Velocidad: 20
+  arquero: {fileID: 2216068972442258325, guid: 1091d8bfdad498646adfce015905fbf4, type: 3}

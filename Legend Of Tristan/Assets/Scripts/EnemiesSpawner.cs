@@ -7,10 +7,11 @@ public class EnemiesSpawner : MonoBehaviour
 
     public List<GameObject> enemigosPrefab;
     public List<Enemigos> enemigos;
-    private float nextSpawn;
+    private float tiempoSpawn;
 
     private void Update()
     {
+        Debug.Log(Time.time);
         foreach (Enemigos enemigo in enemigos)
         {
             if (enemigo.SpawnTime <= Time.time)

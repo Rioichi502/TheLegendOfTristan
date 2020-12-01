@@ -13,13 +13,13 @@ public class Flecha : MonoBehaviour
         transform.Translate(Vector3.right * Time.deltaTime * Velocidad);
     }
 
-    public void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.gameObject.layer == 11)
-        {
-            collider.gameObject.GetComponent<EnemyController>().RecibirDaño(Daño);
-            Destroy(this.gameObject);
-        }
-    }
+    //public void OnTriggerEnter2D(Collider2D collider)
+    //{
+    //    if (collider.gameObject.layer == 11)
+    //    {
+    //        collider.gameObject.GetComponent<EnemyController>().RecibirDaño(Daño);
+    //        Destroy(this.gameObject);
+    //    }
+    //}
 
 }

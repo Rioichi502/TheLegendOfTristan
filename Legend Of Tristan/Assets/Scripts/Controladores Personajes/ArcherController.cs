@@ -5,15 +5,13 @@ using UnityEngine;
 public class ArcherController : MonoBehaviour
 {
 
-    public int Salud;
+    public int Salud=7;
     public GameObject flecha;
     public List<GameObject> enemigos;
-    public float Cooldown;
+    public float Cooldown=1.5f;
     private float attackTime;
-    public int Daño;
-    public bool atacando;
-    public GameObject objetivo;
-    public int daño;
+    public int Daño=50;
+    private bool atacando;
 
     public void Update() {
         if (enemigos.Count > 0 && atacando == false)
@@ -27,7 +25,7 @@ public class ArcherController : MonoBehaviour
             if(attackTime <= Time.time) {
                 SistemaSonido.ss.PlayAudioArrow();
                 GameObject flechaInstance= Instantiate(flecha, transform);
-                flechaInstance.GetComponent<Flecha>().Daño = daño;
+                flechaInstance.GetComponent<Flecha>().Daño = Daño;
                 attackTime = Time.time + Cooldown;
             }
         }

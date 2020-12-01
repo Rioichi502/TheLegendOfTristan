@@ -23,7 +23,7 @@ public class PersonajesController : MonoBehaviour
         }
         else {
             SistemaSonido.ss.PlayAudioSword();
-            collider.gameObject.GetComponent<EnemyController>().RecibirDaño(Daño);
+            //collider.gameObject.GetComponent<EnemyController>().RecibirDaño(Daño);
             yield return new WaitForSeconds(Cooldown);
             StartCoroutine(Attack(collider));
         }     

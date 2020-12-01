@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5634017473743985773}
   - component: {fileID: -6631644769838764564}
-  - component: {fileID: 4476311605875396203}
   - component: {fileID: 5542029793556080636}
+  - component: {fileID: -8721638055989398924}
   m_Layer: 11
   m_Name: "EsqueletoPeque\xF1o"
   m_TagString: Enemies
@@ -65,22 +65,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 43.527313, y: 58.57434}
   m_EdgeRadius: 0
---- !u!114 &4476311605875396203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68282669377787141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb98e778ce434f447a3bf24ce4f1e331, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Salud: 200
-  "Da\xF1o": 2
-  Cooldown: 1
-  Velocidad: 15
 --- !u!50 &5542029793556080636
 Rigidbody2D:
   serializedVersion: 4
@@ -102,6 +86,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-8721638055989398924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68282669377787141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3551d856687614aac55edbe29835c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Salud: 250
+  TiempoSpawn: 4
+  "Da\xF1o": 4
+  Cooldown: 2
+  Velocidad: 15
+  arquero: {fileID: 2216068972442258325, guid: 1091d8bfdad498646adfce015905fbf4, type: 3}
 --- !u!1 &5767313494907655720
 GameObject:
   m_ObjectHideFlags: 0

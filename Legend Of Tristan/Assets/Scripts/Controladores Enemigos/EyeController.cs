@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoblinController : MonoBehaviour
+public class EyeController : MonoBehaviour
 {
-    public int Salud=150;
-    public int Daño=1;
-    public float Cooldown=1;
-    public float Velocidad=20;
-    private bool Quieto=false;
+
+    public int Salud = 200;
+    public int TiempoSpawn = 3;
+    public int Daño = 2;
+    public float Cooldown = 1;
+    public float Velocidad = 20;
+    private bool Quieto = false;
+    public ArcherController arquero;
 
     void Update()
     {
@@ -25,33 +28,38 @@ public class GoblinController : MonoBehaviour
             StartCoroutine(Attack(collider));
             Quieto = true;
         }
+
+        if (collider.gameObject.layer == 12)
+        {
+            RecibirDaño(arquero.Daño);
+            Destroy(collider.gameObject);
+        }
+
     }
 
-    IEnumerator Attack(Collider2D collider)
-    {
-        if (collider == null)
-        {
+    IEnumerator Attack(Collider2D collider) {
+        if (collider == null){
             Quieto = false;
         }
-        else
-        {
+        else {
             try { collider.gameObject.GetComponent<ArcherController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<PersonajesController>().RecibirDaño(Daño); } catch { }
             yield return new WaitForSeconds(Cooldown);
             StartCoroutine(Attack(collider));
-        }
+        }     
     }
 
-    public void RecibirDaño(int daño)
-    {
-        if (Salud - daño <= 0)
-        {
+    public void RecibirDaño(int daño) {
+        if (Salud-daño <= 0) {
             transform.parent.GetComponent<Spawnpoint>().enemigos.Remove(this.gameObject);
             Destroy(this.gameObject);
         }
         else
         {
             Salud = Salud - daño;
-        }
+        } 
     }
+
+
+
 }

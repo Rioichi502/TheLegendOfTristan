@@ -139,7 +139,4 @@ MonoBehaviour:
   flecha: {fileID: 5613389611976210313, guid: 0d3a6dde10399004fab4e948f6de1a80, type: 3}
   enemigos: []
   Cooldown: 1.5
-  "Da\xF1o": 0
-  atacando: 0
-  objetivo: {fileID: 0}
-  "da\xF1o": 50
+  "Da\xF1o": 50

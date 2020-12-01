@@ -105,8 +105,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3046256326137246783}
   - component: {fileID: -8388579845724026885}
-  - component: {fileID: -8235408767600308362}
   - component: {fileID: -4351867755583782922}
+  - component: {fileID: -5920382159897948502}
   m_Layer: 11
   m_Name: Goblin
   m_TagString: Enemies
@@ -160,22 +160,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 82.13495, y: 83.8251}
   m_EdgeRadius: 0
---- !u!114 &-8235408767600308362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8564144488245253765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb98e778ce434f447a3bf24ce4f1e331, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Salud: 150
-  "Da\xF1o": 1
-  Cooldown: 1
-  Velocidad: 15
 --- !u!50 &-4351867755583782922
 Rigidbody2D:
   serializedVersion: 4
@@ -197,3 +181,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5920382159897948502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564144488245253765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8e34d64d70d1349838e4fe3adc6cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Salud: 150
+  TiempoSpawn: 2
+  "Da\xF1o": 1
+  Cooldown: 1
+  Velocidad: 20
+  arquero: {fileID: 2216068972442258325, guid: 1091d8bfdad498646adfce015905fbf4, type: 3}
