@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
 
     public int Salud=4;
     public GameObject MenuUI;
+    public Slider barraSalud;
 
     Animator animator;
 
@@ -21,6 +23,7 @@ public class GameOver : MonoBehaviour
         {          
             Destroy(collider.gameObject);
             Salud -= 1;
+            barraSalud.value = Salud;
             animator.SetInteger("Salud", Salud);
             if (Salud == 0)
             {
