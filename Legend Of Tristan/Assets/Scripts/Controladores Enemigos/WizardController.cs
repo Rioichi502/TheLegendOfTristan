@@ -32,7 +32,6 @@ public class WizardController : MonoBehaviour
     {
         if (collider.gameObject.layer == 10)
         {
-            animator.SetBool("Luchando", true);
             StartCoroutine(Attack(collider));
             Quieto = true;
         }
@@ -49,11 +48,11 @@ public class WizardController : MonoBehaviour
     {
         if (collider == null)
         {
-            animator.SetBool("Luchando", false);
             Quieto = false;
         }
         else
         {
+            SistemaSonido.ss.PlayAudioFireball();
             try { collider.gameObject.GetComponent<ArcherController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<BandidoController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<ReyController>().RecibirDaño(Daño); } catch { }

@@ -54,6 +54,7 @@ public class EyeController : MonoBehaviour
         }
         else
         {
+            SistemaSonido.ss.PlayAudioEye();
             try { collider.gameObject.GetComponent<ArcherController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<BandidoController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<ReyController>().RecibirDaño(Daño); } catch { }

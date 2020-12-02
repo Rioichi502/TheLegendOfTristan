@@ -54,6 +54,7 @@ public class SetaController : MonoBehaviour
         }
         else
         {
+            SistemaSonido.ss.PlayAudioPhysical();
             try { collider.gameObject.GetComponent<ArcherController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<BandidoController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<ReyController>().RecibirDaño(Daño); } catch { }

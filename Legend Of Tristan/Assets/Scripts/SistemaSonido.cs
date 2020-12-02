@@ -12,6 +12,8 @@ public class SistemaSonido : MonoBehaviour
     public AudioSource audioPhysical;
     public AudioSource audioArrow;
     public AudioSource audioAxe;
+    public AudioSource audioSmite;
+    public AudioSource audioEye;
 
     void Awake() {
         if (ss == null)
@@ -48,6 +50,14 @@ public class SistemaSonido : MonoBehaviour
 
      public void PlayAudioAxe(){
         audioAxe.Play();
+    }
+
+    public void PlayAudioSmite(){
+        audioSmite.Play();
+    }
+
+    public void PlayAudioEye(){
+        audioEye.Play();
     }
 
     

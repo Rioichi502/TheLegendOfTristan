@@ -54,6 +54,7 @@ public class DemonController : MonoBehaviour
         }
         else
         {
+            SistemaSonido.ss.PlayAudioAxe();
             try { collider.gameObject.GetComponent<ArcherController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<BandidoController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<ReyController>().RecibirDaño(Daño); } catch { }

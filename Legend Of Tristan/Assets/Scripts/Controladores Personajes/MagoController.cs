@@ -30,7 +30,7 @@ public class MagoController : MonoBehaviour
             animator.SetBool("Luchando", false);
         }
         else {
-            SistemaSonido.ss.PlayAudioSword();
+            SistemaSonido.ss.PlayAudioSmite();
             try { collider.gameObject.GetComponent<GoblinController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<WizardController>().RecibirDaño(Daño); } catch { }
             try { collider.gameObject.GetComponent<EyeController>().RecibirDaño(Daño); } catch { }
