@@ -8,12 +8,11 @@ public class ArcherController : MonoBehaviour
     public int Salud=7;
     public GameObject flecha;
     public List<GameObject> enemigos;
-    public float Cooldown=1.5f;
+    public float Cooldown=1.0f;
     private float attackTime;
     public int Daño=50;
     private bool atacando;
-    public GameObject lapida;
-    public GameObject pies;
+    public GameObject arco;
 
     Animator animator;
 
@@ -25,15 +24,17 @@ public class ArcherController : MonoBehaviour
     public void Update() {
         if (enemigos.Count > 0 && atacando == false)
         {
+            animator.SetBool("Luchando", true);
             atacando = true;
         }
         else if (enemigos.Count == 0 && atacando == true) {
+            animator.SetBool("Luchando", false);
             atacando = false;
         }
         if (atacando == true ) {
             if(attackTime <= Time.time) {
                 SistemaSonido.ss.PlayAudioArrow();
-                GameObject flechaInstance= Instantiate(flecha, transform);
+                GameObject flechaInstance= Instantiate(flecha, arco.transform);
                 flechaInstance.GetComponent<Flecha>().Daño = Daño;
                 attackTime = Time.time + Cooldown;
             }
@@ -43,8 +44,13 @@ public class ArcherController : MonoBehaviour
     public void RecibirDaño(int daño)
     {
         if (Salud - daño <= 0)
-        {          
-            Destroy(this.gameObject);
+        {
+            this.GetComponentInParent<ObjectContainer>().ocupado = false;
+            animator.SetInteger("Salud", 0);
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
+            {
+                Destroy(this.gameObject);
+            }
         }
         else
         {

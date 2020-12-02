@@ -8,10 +8,6 @@ public class BandidoController : MonoBehaviour
     public int Salud=7;
     public int Daño=50;
     public float Cooldown=0.5f;
-    public GameObject lapida;
-    public GameObject pies;
-    private GameObject Lapida;
-
 
     Animator animator;
 
@@ -49,10 +45,11 @@ public class BandidoController : MonoBehaviour
 
     public void RecibirDaño(int daño) {
         if (Salud-daño <= 0) {
+            this.GetComponentInParent<ObjectContainer>().ocupado = false;
             animator.SetInteger("Salud", 0);
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
-                Lapida= Instantiate(lapida, transform);
+                Destroy(this.gameObject);
             }
         }
         else

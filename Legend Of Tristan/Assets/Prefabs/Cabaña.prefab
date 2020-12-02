@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5960712156894955285}
   - component: {fileID: 5960712156894955283}
   - component: {fileID: 2647149239335918272}
+  - component: {fileID: -3415926361194070305}
   m_Layer: 10
   m_Name: "Caba\xF1a"
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1948239599
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7405807288698727641, guid: eaf362b6047823b4db9ad9f09884f7d6,
     type: 3}
@@ -94,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 5960712156894955286}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 158aaecac2c3cd4439c82eb775ec4801, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -129,3 +130,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.94, y: 1.27}
   m_EdgeRadius: 0
+--- !u!114 &-3415926361194070305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5960712156894955286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5aab054808c151499e2797b24455af8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

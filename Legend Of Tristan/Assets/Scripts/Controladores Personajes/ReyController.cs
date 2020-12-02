@@ -8,16 +8,12 @@ public class ReyController : MonoBehaviour
     public int Salud=15;
     public int Daño=100;
     public float Cooldown=1;
-    public GameObject lapida;
-    public GameObject pies;
-    private Vector3 posicion;
 
     Animator animator;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
-        posicion = new Vector3(pies.transform.position.x, pies.transform.position.y, pies.transform.position.z);
     }
 
     public void OnTriggerEnter2D(Collider2D collider)
@@ -47,19 +43,21 @@ public class ReyController : MonoBehaviour
         }     
     }
 
-    public void RecibirDaño(int daño) {
-        if (Salud-daño <= 0) {
+    public void RecibirDaño(int daño)
+    {
+        if (Salud - daño <= 0)
+        {
+            this.GetComponentInParent<ObjectContainer>().ocupado = false;
             animator.SetInteger("Salud", 0);
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
-                Instantiate(lapida, posicion, Quaternion.identity);
                 Destroy(this.gameObject);
             }
         }
         else
         {
             Salud = Salud - daño;
-        } 
+        }
     }
 
 

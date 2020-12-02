@@ -11,7 +11,13 @@ public class GoblinController : MonoBehaviour
     public float Velocidad=20;
     private bool Quieto=false;
     public ArcherController arquero;
- 
+
+    Animator animator;
+
+    void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
 
     void Update()
     {
@@ -25,6 +31,7 @@ public class GoblinController : MonoBehaviour
     {
         if (collider.gameObject.layer == 10)
         {
+            animator.SetBool("Luchando", true);
             StartCoroutine(Attack(collider));
             Quieto = true;
         }
@@ -41,6 +48,7 @@ public class GoblinController : MonoBehaviour
     {
         if (collider == null)
         {
+            animator.SetBool("Luchando", false);
             Quieto = false;
         }
         else
@@ -59,8 +67,11 @@ public class GoblinController : MonoBehaviour
     {
         if (Salud - daño <= 0)
         {
-            transform.parent.GetComponent<Spawnpoint>().enemigos.Remove(this.gameObject);
-            Destroy(this.gameObject);
+            animator.SetInteger("Salud", 0);
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
+            {
+                Destroy(this.gameObject);
+            }
         }
         else
         {
