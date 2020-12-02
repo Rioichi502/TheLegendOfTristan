@@ -16,14 +16,20 @@ public class ObjectContainer : MonoBehaviour
         gameManager = GameManager.instance;
     }
 
-    public void OnTriggerEnter2D(Collider2D collision) {
-        if (gameManager.draggingObject != null && ocupado == false && collision.tag == "Player") {
-            gameManager.currentContainer = this.gameObject;
-            backgroundImage.enabled = true;
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+            if (gameManager.draggingObject != null && ocupado == false)
+            {
+                gameManager.currentContainer = this.gameObject;
+                backgroundImage.enabled = true;
+            }
         }
     }
 
-    public void OnTriggerExit2D(Collider2D collision) {
+    public void OnTriggerExit2D(Collider2D collision)
+    {
         gameManager.currentContainer = null;
         backgroundImage.enabled = false;
     }
