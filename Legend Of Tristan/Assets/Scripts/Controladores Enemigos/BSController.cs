@@ -6,7 +6,7 @@ public class BSController : MonoBehaviour
 {
 
     public int Salud = 350;
-    public int TiempoSpawn = 4;
+    public int TiempoSpawn = 10;
     public int Daño = 3;
     public float Cooldown = 2;
     public float Velocidad = 15;

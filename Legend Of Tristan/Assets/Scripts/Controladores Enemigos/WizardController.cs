@@ -6,7 +6,7 @@ public class WizardController : MonoBehaviour
 {
 
     public int Salud = 350;
-    public int TiempoSpawn = 7;
+    public int TiempoSpawn = 9;
     public int Daño = 5;
     public float Cooldown = 2;
     public float Velocidad = 15;

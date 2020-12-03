@@ -48,3 +48,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb21819a170dfb449270ee957b4d7e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemigos: []
+  goblin: {fileID: 8564144488245253765, guid: f0f16924e6e14ba4685870278767c7f4, type: 3}

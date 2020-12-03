@@ -36,4 +36,5 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
         gameManager.draggingObject = null;
         Destroy(objectDragInstance);
     }
+
 }

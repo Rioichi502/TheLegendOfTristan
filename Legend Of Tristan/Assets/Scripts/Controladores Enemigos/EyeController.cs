@@ -6,7 +6,7 @@ public class EyeController : MonoBehaviour
 {
 
     public int Salud = 200;
-    public int TiempoSpawn = 3;
+    public int TiempoSpawn = 7;
     public int Daño = 2;
     public float Cooldown = 1;
     public float Velocidad = 20;

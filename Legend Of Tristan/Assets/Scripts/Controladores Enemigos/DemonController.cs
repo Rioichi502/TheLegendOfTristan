@@ -6,7 +6,7 @@ public class DemonController : MonoBehaviour
 {
 
     public int Salud = 750;
-    public int TiempoSpawn = 10;
+    public int TiempoSpawn = 16;
     public int Daño = 4;
     public float Cooldown = 2;
     public float Velocidad = 10;

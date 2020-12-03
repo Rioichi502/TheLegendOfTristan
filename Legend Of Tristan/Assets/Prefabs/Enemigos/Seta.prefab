@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Salud: 300
-  TiempoSpawn: 5
+  TiempoSpawn: 11
   "Da\xF1o": 1
   Cooldown: 1
   Velocidad: 10

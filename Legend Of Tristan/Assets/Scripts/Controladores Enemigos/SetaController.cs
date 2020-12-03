@@ -6,7 +6,7 @@ public class SetaController : MonoBehaviour
 {
 
     public int Salud = 500;
-    public int TiempoSpawn = 5;
+    public int TiempoSpawn = 11;
     public int Daño = 1;
     public float Cooldown = 1;
     public float Velocidad = 10;

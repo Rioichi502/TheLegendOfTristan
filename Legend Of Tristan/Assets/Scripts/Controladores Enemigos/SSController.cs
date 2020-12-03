@@ -6,7 +6,7 @@ public class SSController : MonoBehaviour
 {
 
     public int Salud = 250;
-    public int TiempoSpawn = 4;
+    public int TiempoSpawn = 12;
     public int Daño = 4;
     public float Cooldown = 2;
     public float Velocidad = 15;

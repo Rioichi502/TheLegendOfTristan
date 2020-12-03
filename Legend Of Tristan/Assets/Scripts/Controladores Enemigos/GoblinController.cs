@@ -5,7 +5,7 @@ using UnityEngine;
 public class GoblinController : MonoBehaviour
 {
     public int Salud=150;
-    public int TiempoSpawn = 2;
+    public int TiempoSpawn = 6;
     public int Daño=1;
     public float Cooldown=1;
     public float Velocidad=20;
