@@ -8,6 +8,10 @@ public class SistemaSonidoHome : MonoBehaviour
     public AudioSource homeMusic;
 
     void Awake() {
+        //datos al iniciar
+        DataJuego data = new DataJuego();
+        data.Cargar();
+
         if (ss == null)
         {
             ss = this;

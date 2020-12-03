@@ -7,7 +7,7 @@ using System.IO;
 
 public class DataJuego : MonoBehaviour
 {
-    public int puntuacionMaxima = 0;
+    public string puntuacionMaxima = "";
 
     public static DataJuego estadoJuego;
 
@@ -41,7 +41,7 @@ public class DataJuego : MonoBehaviour
         file.Close();
     }
 
-    void Cargar()
+    public void Cargar()
     {
         if (File.Exists(rutaArchivo))
         {
@@ -56,7 +56,7 @@ public class DataJuego : MonoBehaviour
         }
         else
         {
-            puntuacionMaxima = 0;
+            puntuacionMaxima = "";
         }
     }
 }
@@ -64,5 +64,5 @@ public class DataJuego : MonoBehaviour
 [Serializable]
 class DatosAGuardar
 {
-    public int puntuacionMaxima;
+    public string puntuacionMaxima;
 }
