@@ -1243,6 +1243,7 @@ GameObject:
   - component: {fileID: 832432085}
   - component: {fileID: 832432087}
   - component: {fileID: 832432086}
+  - component: {fileID: 832432088}
   m_Layer: 5
   m_Name: PanelScores
   m_TagString: Untagged
@@ -1308,6 +1309,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832432084}
   m_CullTransparentMesh: 0
+--- !u!114 &832432088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832432084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e6ba78f67ca014eaa252aa10e43006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  record: {fileID: 26837692}
 --- !u!1 &961645407
 GameObject:
   m_ObjectHideFlags: 0

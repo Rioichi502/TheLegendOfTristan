@@ -29,7 +29,10 @@ public class GameOver : MonoBehaviour
             if (Salud == 0)
             {
                 //Debug.Log(timer.text);
-                DataJuego.estadoJuego.puntuacionMaxima = timer.text;
+                DataJuego data = new DataJuego();
+                data.puntuacionMaxima = timer.text;
+                //bien guardado
+                Debug.Log(data.puntuacionMaxima);
                 MenuUI.SetActive(true);
                 Time.timeScale = 0;
             }
