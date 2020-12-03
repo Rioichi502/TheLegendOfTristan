@@ -35,78 +35,109 @@ public class EnemiesSpawner : MonoBehaviour
     private float tiempoSpawnSeta = 10;
     private int tiempoSeta;
 
+    private void Awake() {
+        tiempoGoblin = goblin.GetComponent<GoblinController>().TiempoSpawn;
+        tiempoOjo = ojo.GetComponent<EyeController>().TiempoSpawn;
+        tiempoBrujo = brujo.GetComponent<WizardController>().TiempoSpawn;
+        tiempoBs = bs.GetComponent<BSController>().TiempoSpawn;
+        tiempoSs = ss.GetComponent<SSController>().TiempoSpawn;
+        tiempoDemonio = demonio.GetComponent<DemonController>().TiempoSpawn;
+        tiempoSeta = seta.GetComponent<SetaController>().TiempoSpawn;
+    }
+
     private void Update()
-    {
-        if ((int)Time.timeSinceLevelLoad % 30 == 0) {
-            if (goblin.GetComponent<GoblinController>().TiempoSpawn - 1 != 0)
-            {
-                tiempoGoblin = goblin.GetComponent<GoblinController>().TiempoSpawn - 1;
-            }
-            if (goblin.GetComponent<GoblinController>().TiempoSpawn - 1 != 0)
-            {
-                tiempoOjo = ojo.GetComponent<EyeController>().TiempoSpawn - 1;
-            }
-            if (goblin.GetComponent<GoblinController>().TiempoSpawn - 1 != 0)
-            {
-                tiempoBrujo = brujo.GetComponent<WizardController>().TiempoSpawn - 1;
-            }
-            if (goblin.GetComponent<GoblinController>().TiempoSpawn - 1 != 0)
-            {
-                tiempoBs = bs.GetComponent<BSController>().TiempoSpawn - 1;
-            }
-            if (goblin.GetComponent<GoblinController>().TiempoSpawn - 1 != 0)
-            {
-                tiempoSs = ss.GetComponent<SSController>().TiempoSpawn - 1;
-            }
-            if (goblin.GetComponent<GoblinController>().TiempoSpawn - 1 != 0)
-            {
-                tiempoDemonio = demonio.GetComponent<DemonController>().TiempoSpawn - 1;
-            }
-            if (goblin.GetComponent<GoblinController>().TiempoSpawn - 1 != 0)
-            {
-                tiempoSeta = seta.GetComponent<SetaController>().TiempoSpawn - 1;
-            }
-        }
+    {        
         if (tiempoSpawnGoblin <= Time.timeSinceLevelLoad)
         {
+            InvokeRepeating("ReducirtiempoGoblin", 5.0f, 5.0f);
             GameObject intanciaGoblin = Instantiate(goblin, spawnpoints[Random.Range(0,spawnpoints.Length)].transform);
-            tiempoSpawnGoblin = Time.timeSinceLevelLoad + tiempoGoblin;
+            tiempoSpawnGoblin += tiempoGoblin;
         }
-
         if (tiempoSpawnOjo <= Time.timeSinceLevelLoad)
         {
+            InvokeRepeating("ReducirtiempoOjo", 5.0f, 5.0f);
             GameObject intanciaOjo = Instantiate(ojo, spawnpoints[Random.Range(0, spawnpoints.Length)].transform);
-            tiempoSpawnOjo = Time.timeSinceLevelLoad + tiempoOjo;
+            tiempoSpawnOjo += tiempoOjo;
         }
-
         if (tiempoSpawnBrujo <= Time.timeSinceLevelLoad)
         {
+            InvokeRepeating("ReducirtiempoBrujo", 5.0f, 5.0f);
             GameObject intanciaBrujo = Instantiate(brujo, spawnpoints[Random.Range(0, spawnpoints.Length)].transform);
-            tiempoSpawnBrujo = Time.timeSinceLevelLoad + tiempoBrujo;
+            tiempoSpawnBrujo += tiempoBrujo;
         }
-
         if (tiempoSpawnBs <= Time.timeSinceLevelLoad)
         {
+            InvokeRepeating("ReducirtiempoBs", 5.0f, 5.0f);
             GameObject intanciaBs = Instantiate(bs, spawnpoints[Random.Range(0, spawnpoints.Length)].transform);
-            tiempoSpawnBs = Time.timeSinceLevelLoad + tiempoBs;
+            tiempoSpawnBs += tiempoBs;
         }
-
         if (tiempoSpawnSs <= Time.timeSinceLevelLoad)
         {
+            InvokeRepeating("ReducirtiempoSs", 5.0f, 5.0f);
             GameObject intanciaSs = Instantiate(ss, spawnpoints[Random.Range(0, spawnpoints.Length)].transform);
-            tiempoSpawnSs = Time.timeSinceLevelLoad + tiempoSs;
+            tiempoSpawnSs += tiempoSs;
         }
-
         if (tiempoSpawnDemonio <= Time.timeSinceLevelLoad)
         {
+            InvokeRepeating("ReducirtiempoDemonio", 5.0f, 5.0f);
             GameObject intanciaDemon = Instantiate(demonio, spawnpoints[Random.Range(0, spawnpoints.Length)].transform);
-            tiempoSpawnDemonio = Time.timeSinceLevelLoad + tiempoDemonio;
+            tiempoSpawnDemonio += tiempoDemonio;
         }
 
         if (tiempoSpawnSeta <= Time.timeSinceLevelLoad)
         {
+            InvokeRepeating("ReducirtiempoSeta", 5.0f, 5.0f);
             GameObject intanciaSeta = Instantiate(seta, spawnpoints[Random.Range(0, spawnpoints.Length)].transform);
-            tiempoSpawnSeta = Time.timeSinceLevelLoad + tiempoSeta;
+            tiempoSpawnSeta += tiempoSeta;
+        }
+    }
+
+    public void ReducirtiempoGoblin()
+    {
+        if (tiempoGoblin - 1 != 0) {
+            tiempoGoblin -= 1;
+        }
+    }
+    public void ReducirtiempoOjo()
+    {
+        if (tiempoOjo - 1 != 0)
+        {
+            tiempoOjo -= 1;
+        }
+    }
+    public void ReducirtiempoBrujo()
+    {
+        if (tiempoBrujo - 1 != 0)
+        {
+            tiempoBrujo -= 1;
+        }
+    }
+    public void ReducirtiempoBs()
+    {
+        if (tiempoBs - 1 != 0)
+        {
+            tiempoBs -= 1;
+        }
+    }
+    public void ReducirtiempoSs()
+    {
+        if (tiempoSs - 1 != 0)
+        {
+            tiempoSs -= 1;
+        }
+    }
+    public void ReducirtiempoDemonio()
+    {
+        if (tiempoDemonio - 1 != 0)
+        {
+            tiempoDemonio -= 1;
+        }
+    }
+    public void ReducirtiempoSeta()
+    {
+        if (tiempoSeta - 1 != 0)
+        {
+            tiempoSeta -= 1;
         }
     }
 
