@@ -12754,7 +12754,7 @@ PrefabInstance:
     - target: {fileID: 5583797401637717856, guid: 73f4a638e4fdb9242806c977e2cfcfc9,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5583797401637717857, guid: 73f4a638e4fdb9242806c977e2cfcfc9,
         type: 3}
@@ -12871,5 +12871,10 @@ PrefabInstance:
       propertyPath: barraSalud
       value: 
       objectReference: {fileID: 853635217}
+    - target: {fileID: 5583797401637717860, guid: 73f4a638e4fdb9242806c977e2cfcfc9,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 1575216865}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73f4a638e4fdb9242806c977e2cfcfc9, type: 3}

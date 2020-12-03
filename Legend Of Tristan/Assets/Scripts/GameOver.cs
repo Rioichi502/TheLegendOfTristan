@@ -9,6 +9,7 @@ public class GameOver : MonoBehaviour
     public int Salud=4;
     public GameObject MenuUI;
     public Slider barraSalud;
+    public Text timer;
 
     Animator animator;
 
@@ -27,6 +28,8 @@ public class GameOver : MonoBehaviour
             animator.SetInteger("Salud", Salud);
             if (Salud == 0)
             {
+                //Debug.Log(timer.text);
+                DataJuego.estadoJuego.puntuacionMaxima = timer.text;
                 MenuUI.SetActive(true);
                 Time.timeScale = 0;
             }
