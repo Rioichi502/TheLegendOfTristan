@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DemonController : MonoBehaviour
 {
+    public GameObject moneda;
 
     public int Salud = 750;
     public int TiempoSpawn = 16;
@@ -72,6 +73,8 @@ public class DemonController : MonoBehaviour
             animator.SetInteger("Salud", 0);
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
+                Instantiate(moneda, this.transform);
+                moneda.transform.parent = null;
                 Destroy(this.gameObject);
             }
         }

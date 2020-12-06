@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SetaController : MonoBehaviour
 {
+    public GameObject moneda;
 
     public int Salud = 500;
     public int TiempoSpawn = 11;
@@ -72,6 +73,8 @@ public class SetaController : MonoBehaviour
             animator.SetInteger("Salud", 0);
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
+                Instantiate(moneda, this.transform);
+                moneda.transform.parent = null;
                 Destroy(this.gameObject);
             }
         }

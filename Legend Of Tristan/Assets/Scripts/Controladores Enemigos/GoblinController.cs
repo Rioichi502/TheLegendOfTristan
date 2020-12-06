@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GoblinController : MonoBehaviour
 {
+    public GameObject moneda;
+
     public int Salud=150;
     public int TiempoSpawn = 6;
     public int Daño=1;
@@ -71,6 +73,8 @@ public class GoblinController : MonoBehaviour
             animator.SetInteger("Salud", 0);
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
+                Instantiate(moneda, this.transform);
+                moneda.transform.parent = null;
                 Destroy(this.gameObject);
             }
         }

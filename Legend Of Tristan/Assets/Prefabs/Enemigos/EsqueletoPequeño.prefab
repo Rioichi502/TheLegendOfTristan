@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee3551d856687614aac55edbe29835c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneda: {fileID: 5946112415381553734, guid: 0077dce949ad02b4c990988b0e18b3ca, type: 3}
   Salud: 250
   TiempoSpawn: 12
   "Da\xF1o": 4

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EyeController : MonoBehaviour
 {
+    public GameObject moneda;
 
     public int Salud = 200;
     public int TiempoSpawn = 7;
@@ -72,6 +73,8 @@ public class EyeController : MonoBehaviour
             animator.SetInteger("Salud", 0);
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
+                Instantiate(moneda, this.transform);
+                moneda.transform.parent = null;
                 Destroy(this.gameObject);
             }
         }
