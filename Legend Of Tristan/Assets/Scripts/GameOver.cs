@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -27,7 +28,9 @@ public class GameOver : MonoBehaviour
             barraSalud.value = Salud;
             animator.SetInteger("Salud", Salud);
             if (Salud == 0)
-            {                
+            {
+                DataJuego.dataJuego.Cargar();
+                //comparar DataJuego.dataJuego.puntuacionMaxima con timer.text
                 DataJuego.dataJuego.puntuacionMaxima = timer.text;
                 DataJuego.dataJuego.Guardar();
                 MenuUI.SetActive(true);

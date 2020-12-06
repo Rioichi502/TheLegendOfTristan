@@ -23,7 +23,8 @@ public class SetDataValues : MonoBehaviour
     {        
         if (DataJuego.dataJuego.puntuacionMaxima != null)
         {
-            record.text = "Tu duración máxima en una partida es:   " + DataJuego.dataJuego.puntuacionMaxima;
+            //record.text = "Tu duración máxima en una partida es:   " + DataJuego.dataJuego.puntuacionMaxima;
+            record.text = "Tu última duración fue:   " + DataJuego.dataJuego.puntuacionMaxima;
         }
         
     }
