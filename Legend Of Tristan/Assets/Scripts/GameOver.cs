@@ -27,12 +27,9 @@ public class GameOver : MonoBehaviour
             barraSalud.value = Salud;
             animator.SetInteger("Salud", Salud);
             if (Salud == 0)
-            {
-                //Debug.Log(timer.text);
-                DataJuego data = new DataJuego();
-                data.puntuacionMaxima = timer.text;
-                //bien guardado
-                Debug.Log(data.puntuacionMaxima);
+            {                
+                DataJuego.dataJuego.puntuacionMaxima = timer.text;
+                DataJuego.dataJuego.Guardar();
                 MenuUI.SetActive(true);
                 Time.timeScale = 0;
             }

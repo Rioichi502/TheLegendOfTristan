@@ -20,14 +20,10 @@ public class SetDataValues : MonoBehaviour
     }
 
     void OnEnable()
-    {
-        DataJuego data = new DataJuego();
-        //aqui da null
-        Debug.Log(data);
-        Debug.Log(data.puntuacionMaxima);
-        if (data != null)
+    {        
+        if (DataJuego.dataJuego.puntuacionMaxima != null)
         {
-            record.text = "RECORD: " + data.puntuacionMaxima.ToString();
+            record.text = "Tu duración máxima en una partida es:   " + DataJuego.dataJuego.puntuacionMaxima;
         }
         
     }

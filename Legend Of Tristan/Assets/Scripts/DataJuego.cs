@@ -9,21 +9,16 @@ public class DataJuego : MonoBehaviour
 {
     public string puntuacionMaxima = "";
 
-    public static DataJuego estadoJuego;
+    public static DataJuego dataJuego;
 
     private String rutaArchivo;
 
     void Awake()
     {
         rutaArchivo = Application.persistentDataPath + "/datos.dat";
-        if (estadoJuego == null)
+        if (dataJuego == null)
         {
-            estadoJuego = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else if (estadoJuego != this)
-        {
-            Destroy(gameObject);
+            dataJuego = this;
         }
     }
 
