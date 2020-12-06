@@ -9,9 +9,7 @@ public class SistemaSonidoHome : MonoBehaviour
 
     void Awake() {
         //datos al iniciar
-        DataJuego data = new DataJuego();
-        data.Cargar();
-
+        DataJuego.dataJuego.Cargar();
         if (ss == null)
         {
             ss = this;
