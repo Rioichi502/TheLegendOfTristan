@@ -22,22 +22,13 @@ public class ArcherController : MonoBehaviour
     }
 
     public void Update() {
-        if (enemigos.Count > 0 && atacando == false)
-        {
-            animator.SetBool("Luchando", true);
-            atacando = true;
-        }
-        else if (enemigos.Count == 0 && atacando == true) {
-            animator.SetBool("Luchando", false);
-            atacando = false;
-        }
-        if (atacando == true ) {
-            if(attackTime <= Time.time) {
-                SistemaSonido.ss.PlayAudioArrow();
-                GameObject flechaInstance= Instantiate(flecha, arco.transform);
-                flechaInstance.GetComponent<Flecha>().Daño = Daño;
-                attackTime = Time.time + Cooldown;
-            }
+        animator.SetBool("Luchando", true);
+        if (attackTime <= Time.time)
+        {           
+            SistemaSonido.ss.PlayAudioArrow();
+            GameObject flechaInstance = Instantiate(flecha, arco.transform);
+            flechaInstance.GetComponent<Flecha>().Daño = Daño;
+            attackTime = Time.time + Cooldown;
         }
     }
 
@@ -45,8 +36,9 @@ public class ArcherController : MonoBehaviour
     {
         if (Salud - daño <= 0)
         {
-            this.GetComponentInParent<ObjectContainer>().ocupado = false;
             animator.SetInteger("Salud", 0);
+            GetComponent<BoxCollider2D>().enabled = false;
+            this.GetComponentInParent<ObjectContainer>().ocupado = false;
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
                 Destroy(this.gameObject);

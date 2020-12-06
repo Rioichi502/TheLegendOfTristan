@@ -135,8 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 395ee51b5d22e2948b325685fe17df4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Salud: 10
+  Salud: 20
   "Da\xF1o": 100
   Cooldown: 1
-  lapida: {fileID: 0}
-  pies: {fileID: 0}

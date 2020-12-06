@@ -70,11 +70,12 @@ public class GoblinController : MonoBehaviour
     {
         if (Salud - daño <= 0)
         {
+            Aumentar.contador += 5;
             animator.SetInteger("Salud", 0);
+            Quieto = true;
+            GetComponent<BoxCollider2D>().enabled = false;
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
-                Instantiate(moneda, this.transform);
-                moneda.transform.parent = null;
                 Destroy(this.gameObject);
             }
         }
@@ -83,4 +84,5 @@ public class GoblinController : MonoBehaviour
             Salud = Salud - daño;
         }
     }
+
 }

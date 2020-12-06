@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Aumentar : MonoBehaviour
 {
 
-    public static int contador = 0;
+    public static int contador = 50;
     public Text texto;
 
     public void Start() {

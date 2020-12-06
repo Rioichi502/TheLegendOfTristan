@@ -70,11 +70,12 @@ public class SetaController : MonoBehaviour
     {
         if (Salud - daño <= 0)
         {
+            Aumentar.contador += 10;
             animator.SetInteger("Salud", 0);
+            Quieto = true;
+            GetComponent<BoxCollider2D>().enabled = false;
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
-                Instantiate(moneda, this.transform);
-                moneda.transform.parent = null;
                 Destroy(this.gameObject);
             }
         }

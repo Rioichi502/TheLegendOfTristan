@@ -49,25 +49,25 @@ public class EnemiesSpawner : MonoBehaviour
     {        
         if (tiempoSpawnGoblin <= Time.timeSinceLevelLoad)
         {
-            InvokeRepeating("ReducirtiempoGoblin", 5.0f, 5.0f);
+            InvokeRepeating("ReducirtiempoGoblin", 15.0f, 15.0f);
             GameObject intanciaGoblin = Instantiate(goblin, spawnpoints[Random.Range(0,spawnpoints.Length)].transform);
             tiempoSpawnGoblin += tiempoGoblin;
         }
         if (tiempoSpawnOjo <= Time.timeSinceLevelLoad)
         {
-            InvokeRepeating("ReducirtiempoOjo", 5.0f, 5.0f);
+            InvokeRepeating("ReducirtiempoOjo", 15.0f, 15.0f);
             GameObject intanciaOjo = Instantiate(ojo, spawnpoints[Random.Range(0, spawnpoints.Length)].transform);
             tiempoSpawnOjo += tiempoOjo;
         }
         if (tiempoSpawnBrujo <= Time.timeSinceLevelLoad)
         {
-            InvokeRepeating("ReducirtiempoBrujo", 5.0f, 5.0f);
+            InvokeRepeating("ReducirtiempoBrujo", 15.0f, 15.0f);
             GameObject intanciaBrujo = Instantiate(brujo, spawnpoints[Random.Range(0, spawnpoints.Length)].transform);
             tiempoSpawnBrujo += tiempoBrujo;
         }
         if (tiempoSpawnBs <= Time.timeSinceLevelLoad)
         {
-            InvokeRepeating("ReducirtiempoBs", 5.0f, 5.0f);
+            InvokeRepeating("ReducirtiempoBs", 15.0f, 15.0f);
             GameObject intanciaBs = Instantiate(bs, spawnpoints[Random.Range(0, spawnpoints.Length)].transform);
             tiempoSpawnBs += tiempoBs;
         }

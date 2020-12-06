@@ -172,12 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc476f1c4ce02d847a89f37dd5fafaa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rayo: {fileID: 7696951150045995193}
-  inicioRayo: {x: 0, y: 0, z: 0}
-  finalRayo: {x: 0, y: 0, z: 0}
-  ajuste: 0
-  color: {r: 1, g: 0, b: 0, a: 1}
-  Salud: 7
+  Salud: 14
   flecha: {fileID: 5613389611976210313, guid: 0d3a6dde10399004fab4e948f6de1a80, type: 3}
   enemigos: []
   Cooldown: 1

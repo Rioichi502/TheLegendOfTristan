@@ -134,8 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4488c0a6f9e9b40b7ac0becba37ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Salud: 7
+  Salud: 14
   "Da\xF1o": 50
   Cooldown: 0.5
-  contenedor: {fileID: 3601475861502830869, guid: af6cccd170904af42bd0801a29e5ad0c,
-    type: 3}

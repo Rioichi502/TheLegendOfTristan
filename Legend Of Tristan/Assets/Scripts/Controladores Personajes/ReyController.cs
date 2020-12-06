@@ -46,9 +46,10 @@ public class ReyController : MonoBehaviour
     public void RecibirDaño(int daño)
     {
         if (Salud - daño <= 0)
-        {
-            this.GetComponentInParent<ObjectContainer>().ocupado = false;
+        {           
             animator.SetInteger("Salud", 0);
+            GetComponent<BoxCollider2D>().enabled = false;
+            this.GetComponentInParent<ObjectContainer>().ocupado = false;
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
                 Destroy(this.gameObject);
@@ -59,7 +60,5 @@ public class ReyController : MonoBehaviour
             Salud = Salud - daño;
         }
     }
-
-
 
 }
