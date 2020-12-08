@@ -73,7 +73,6 @@ public class BSController : MonoBehaviour
             Aumentar.contador += 10;
             animator.SetInteger("Salud", 0);
             Quieto = true;
-            GetComponent<BoxCollider2D>().enabled = false;
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
                 Destroy(this.gameObject);

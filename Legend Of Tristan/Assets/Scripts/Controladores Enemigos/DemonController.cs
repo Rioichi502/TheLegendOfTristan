@@ -73,7 +73,6 @@ public class DemonController : MonoBehaviour
             Aumentar.contador += 20;
             animator.SetInteger("Salud", 0);
             Quieto = true;
-            GetComponent<BoxCollider2D>().enabled = false;
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
                 Destroy(this.gameObject);

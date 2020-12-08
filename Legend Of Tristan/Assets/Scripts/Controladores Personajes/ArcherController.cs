@@ -7,12 +7,11 @@ public class ArcherController : MonoBehaviour
 
     public int Salud=7;
     public GameObject flecha;
-    public List<GameObject> enemigos;
     public float Cooldown=1.0f;
     private float attackTime;
     public int Daño=50;
-    private bool atacando;
     public GameObject arco;
+    public bool colocado = false;
 
     Animator animator;
 

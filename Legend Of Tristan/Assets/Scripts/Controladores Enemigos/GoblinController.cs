@@ -29,6 +29,7 @@ public class GoblinController : MonoBehaviour
         }
     }
 
+    //Al entrar en contacto con una unidad empieza a luchar y a recibir daño
     public void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.layer == 10)
@@ -46,6 +47,7 @@ public class GoblinController : MonoBehaviour
 
     }
 
+    //Atacar
     IEnumerator Attack(Collider2D collider)
     {
         if (collider == null)
@@ -73,7 +75,6 @@ public class GoblinController : MonoBehaviour
             Aumentar.contador += 5;
             animator.SetInteger("Salud", 0);
             Quieto = true;
-            GetComponent<BoxCollider2D>().enabled = false;
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
                 Destroy(this.gameObject);

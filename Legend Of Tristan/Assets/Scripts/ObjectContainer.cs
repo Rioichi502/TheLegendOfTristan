@@ -16,6 +16,7 @@ public class ObjectContainer : MonoBehaviour
         gameManager = GameManager.instance;
     }
 
+    //Verifica sobré que casilla estás arrastrando el personaje
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.CompareTag("Player"))

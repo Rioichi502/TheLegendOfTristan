@@ -71,7 +71,6 @@ public class WizardController : MonoBehaviour
             Aumentar.contador += 15;
             animator.SetInteger("Salud", 0);
             Quieto = true;
-            GetComponent<BoxCollider2D>().enabled = false;
             if (animator.GetCurrentAnimatorStateInfo(0).IsName("death"))
             {
                 Destroy(this.gameObject);

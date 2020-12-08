@@ -20,6 +20,7 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
         gameManager = GameManager.instance;
     }
 
+    //Cambia el color del texto del coste de las cartas en función de si tienes las monedas suficientes o no
     public void Update() {
         if (Aumentar.contador < coste)
         {
@@ -35,6 +36,7 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
         try { objectDragInstance.transform.position = Input.mousePosition; } catch { }
     }
 
+    //Al hacer click sobre la carta genera al personaje para poder arrastrarlo a la casilla deseada
     public void OnPointerDown(PointerEventData eventData)
     {
         if (Aumentar.contador >= coste)
@@ -42,21 +44,19 @@ public class ObjectCard : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoi
             objectDragInstance = Instantiate(objectDrag, canvas.transform);
             objectDragInstance.transform.position = Input.mousePosition;
             objectDragInstance.GetComponent<ObjectDragging>().card = this;
-
             gameManager.draggingObject = objectDragInstance;
-
         }
     }
 
+    //Al soltar el ratón coloca la unidad sobre la casilla y te resta las monedas de su coste
     public void OnPointerUp(PointerEventData eventData)
     {
         if (Aumentar.contador > 0 && Aumentar.contador - coste >= 0)
         {
             gameManager.PlaceObject();
+            Aumentar.contador -= coste;
             gameManager.draggingObject = null;
             Destroy(objectDragInstance);
-            Aumentar.contador -= coste;
         }
     }
-
 }

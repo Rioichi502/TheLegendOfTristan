@@ -19,6 +19,8 @@ public class GameOver : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    // Al colisonar un enemigo con la tienda de campaña, éste se destruye y 
+    //Dla tienda pierde salud hasta quedar a 0 y hacer aparecer el panel y guadar el tu tiempo de juego
     public void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.layer == 11)
@@ -29,8 +31,6 @@ public class GameOver : MonoBehaviour
             animator.SetInteger("Salud", Salud);
             if (Salud == 0)
             {
-                DataJuego.dataJuego.Cargar();
-                //comparar DataJuego.dataJuego.puntuacionMaxima con timer.text
                 DataJuego.dataJuego.puntuacionMaxima = timer.text;
                 DataJuego.dataJuego.Guardar();
                 MenuUI.SetActive(true);

@@ -9,6 +9,7 @@ public class GestorEscena : MonoBehaviour
         SceneManager.LoadScene(NombreEscena);
         if (NombreEscena.Equals("Juego")) {
             Time.timeScale = 1;
+            Aumentar.contador = 50;
         }
 
     }

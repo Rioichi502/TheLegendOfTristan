@@ -25,6 +25,7 @@ public class ReyController : MonoBehaviour
         }
     }
 
+    //Valora contra qué enemigo está luchando y le hace daño
     IEnumerator Attack(Collider2D collider) { 
         if (collider == null){
             animator.SetBool("Luchando", false);

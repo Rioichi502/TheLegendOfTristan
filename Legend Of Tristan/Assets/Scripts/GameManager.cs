@@ -14,11 +14,11 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
+    //Método para poder desplegar la unidad en la casilla sobre la que estamos poniendo el ratón
     public void PlaceObject() {
         if (draggingObject != null && currentContainer != null)
         {
             GameObject objectGame = Instantiate(draggingObject.GetComponent<ObjectDragging>().card.objectGame, currentContainer.transform);
-            try { objectGame.GetComponent<ArcherController>().enemigos = currentContainer.GetComponent<ObjectContainer>().spawnpoint.enemigos; } catch { }
             currentContainer.GetComponent<ObjectContainer>().ocupado = true;
         }
     }

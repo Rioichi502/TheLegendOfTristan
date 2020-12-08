@@ -18,5 +18,6 @@ public class CambioEscena : MonoBehaviour
     }
     public void CargaNivel(string NombreNivel) {
         SceneManager.LoadScene(NombreNivel);
+        Aumentar.contador = 50;
     }
 }
